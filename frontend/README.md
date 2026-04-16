@@ -1,16 +1,104 @@
-# React + Vite
+ LifeOS
+An AI-powered personal operating system designed to bring clarity, structure, and intelligent planning to everyday life.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ Problem
+Despite the abundance of productivity tools, people still struggle with overwhelm.
+Most task managers are optimized for capturing tasks, not for making decisions.
+As a result, users face:
+Endless task lists with no clear priorities
+Decision fatigue throughout the day
+A gap between planning and meaningful execution
+The core issue is not a lack of tools—it’s a lack of intelligent guidance.
 
-Currently, two official plugins are available:
+Solution
+LifeOS is built to go beyond traditional task management.
+It is designed as a personal AI-powered system that helps users:
+Organize tasks with clarity
+Prioritize effectively
+Generate structured daily plans
+Reduce cognitive load and decision fatigue
+Rather than acting as a passive tool, LifeOS aims to function as an active companion for daily decision-making.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+ Current Product
+The current version focuses on a strong, minimal foundation:
+ Task creation with priority levels
+ Unified task view
+ High-performance backend using FastAPI
+ Clean, distraction-free interface
+The product is intentionally lightweight, enabling fast iteration and a clear user experience.
 
-## React Compiler
+Vision
+LifeOS is evolving into a personal operating system for life management.
+The long-term vision includes:
+Context-aware task understanding
+AI-driven prioritization and scheduling
+Adaptive daily planning based on user behavior
+Continuous optimization of productivity patterns
+The goal is to create a system that doesn’t just track work—but actively helps users decide what to do and when to do it.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Technology Stack
+Backend: FastAPI (Python)
+Frontend: HTML, CSS, JavaScript (scalable to modern frameworks like React)
+Data Layer: In-memory (transitioning to persistent storage)
 
-## Expanding the ESLint configuration
+Getting Started
+Clone the repository
+git clone https://github.com/yousunlotif-bappy/LifeOS.git
+cd lifeos
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Install dependencies
+pip install -r requirements.txt
+
+Run the application
+uvicorn main:app --reload
+
+Access locally
+http://127.0.0.1:8000
+
+
+API Overview
+Method
+Endpoint
+Description
+GET
+/
+Service health check
+GET
+/tasks
+Retrieve all tasks
+POST
+/tasks
+Create a new task
+
+
+Product Principles
+LifeOS is guided by three core principles:
+Clarity-first design — eliminate unnecessary complexity
+Focus-driven experience — prioritize what truly matters
+Iterative progress — build, test, and refine continuously
+
+Roadmap
+Persistent database (SQLite / PostgreSQL)
+Task editing and deletion
+ User authentication and profiles
+AI-powered task prioritization and scheduling
+Behavioral insights and productivity analytics
+
+Contributing
+LifeOS is an evolving system. Contributions are welcome across:
+Product design
+Frontend and backend development
+AI/ML integration
+UX improvements
+Please feel free to open issues or submit pull requests.
+
+Support
+If you find this concept valuable, consider starring the repository.
+It helps validate the idea and supports future development.
+
+Closing Statement
+LifeOS represents a shift from task management to decision support.
+The mission is simple:
+Help individuals operate with greater clarity, reduced stress, and better daily outcomes.
+
+
