@@ -97,3 +97,15 @@ def generate_plan():
             "status": "error",
             "message": str(e)
         }
+    
+
+    tasks = []
+
+@app.get("/tasks")
+def get_tasks():
+    return {"tasks": tasks}
+
+@app.post("/tasks")
+def add_task(task: dict):
+    tasks.append(task)
+    return {"message": "Task added"}
