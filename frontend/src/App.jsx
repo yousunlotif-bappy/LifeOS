@@ -8,7 +8,7 @@ function App() {
   const [plan, setPlan] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const API_BASE = "http://127.0.0.1:8000";
+  const API_BASE = "https://lifeos-demo.onrender.com";
 
   const fetchTasks = async () => {
     try {
