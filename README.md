@@ -55,6 +55,8 @@ uvicorn main:app --reload
 Access locally
 http://127.0.0.1:8000
 
+Live Demo: https://life-os-demo.vercel.app
+
 
 API Overview
 Method
